@@ -8,6 +8,10 @@ $(document).ready(function()
   $("#iMacJS").css('left', "-="+width/2);
   $("#iMacCSS").css('left', "-="+width/2);
   $("#iMacHTML").css('left', "-="+width/2);
+	$('#nav-icon').click(function(){
+		$(this).toggleClass('open');
+    $('.menu').toggleClass('menu-open');
+	});
   $(window).resize(function ()
   {
     once = 0;
@@ -23,6 +27,7 @@ $(document).ready(function()
     $("#iMacCSS").css('left', "-="+width/2);
     $("#iMacHTML").css('left', "-="+width/2);
   });
+
     $("#men1").hover(function()
     {
       if (once == 0) {
